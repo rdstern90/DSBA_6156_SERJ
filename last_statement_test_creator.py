@@ -3,7 +3,7 @@ import pandas as pd
 # import required module
 import os
 # assign directory
-directory = r'C:\Users\Neo\Desktop\Python Projects\6156 project\amex-default-prediction\test_data_split'
+directory = r'.\amex-default-prediction\test_data_split'
 
 df_combined = pd.DataFrame()
  
@@ -20,4 +20,4 @@ for filename in os.listdir(directory):
         df_combined = pd.concat([df_combined,df_test_data_chunk])
 
 df_combined = df_combined.groupby("customer_ID").last() #because of overlap between split files, take final DF, group by again, and take last
-df_combined.to_csv(r"C:\Users\Neo\Desktop\Python Projects\6156 project\amex-default-prediction\test_data_last_statement.csv")
+df_combined.to_csv(r".\amex-default-prediction\test_data_last_statement.csv")
