@@ -130,3 +130,6 @@ dmypy.json
 
 # Config
 secrets.json
+GFG.csv
+df_pred.csv
+testytest.csv
