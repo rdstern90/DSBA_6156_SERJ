@@ -130,7 +130,6 @@ dmypy.json
 
 # Config
 secrets.json
-GFG.csv
-df_pred.csv
-testytest.csv
-XGB_last_statement_target.csv
+
+/amex-default-prediction
+/ignore
